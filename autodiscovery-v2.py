@@ -11,8 +11,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Общие переменные
-netbox_url = 'https://netbox.skpari.local/'
-netbox_api = '968c39c7ea73d24d6ff4f5a0d79e6c3682c5b706'
+netbox_url = 'https://netbox.<your domain>'
+netbox_api = '<your api>'
 nb = pynetbox.api(url=netbox_url, token=netbox_api)
 
 # Отключение SSL и предупреждений SSL
